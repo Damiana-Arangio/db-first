@@ -1,0 +1,18 @@
+
+(Auto usate messe in vendita da un concessionario)
+
+Nome Tabella: AUTO_USATE 
+
+Colonne:
+ID                  --      INT             --      PRIMARY KEY , AUTOINCREMENT
+Targa               --      VARCHAR(10)     --      UNIQUE, NOTNULL
+Marca               --      VARCHAR(30)     --      NOTNULL   
+Modello             --      VARCHAR(30)     --      NOTNULL
+TipoCarburante      --      VARCHAR(20)     --      NULL
+AnnoImm             --      YEAR            --      NOTNULL  
+Proprietari         --      TINYINT         --      NOTNULL, DEFAULT (1)
+Incidenti           --      TINYINT         --      NOTNULL, DEFAULT (0)
+Condizione          --      VARCHAR(20)     --      NULL
+KmPercorsi          --      INT             --      NOTNULL
+Colore              --      VARCHAR(30)     --      NULL
+prezzo              --      DECIMAL(10,2)   --      NOTNULL
